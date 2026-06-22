@@ -1,0 +1,25 @@
+# Build outputs
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local test outputs
+local_test_py_tool/__pycache__/
