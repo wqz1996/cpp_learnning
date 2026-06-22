@@ -16,6 +16,6 @@ public:
 		int n = nums.size();
 		if (n == 1)
 			return nums[0];
-		return max(findrob(nums, 0, n - 2), findrob(nums, 1, n - 1));//因为头尾不能同时抢，将其分为两种情况，[0,n-2]和[1,n-1]
+		return max(findrob(nums, 0, n - 2), findrob(nums, 1, n - 1));//鍥犱负澶村熬涓嶈兘鍚屾椂鎶紝灏嗗叾鍒嗕负涓ょ鎯呭喌锛孾0,n-2]鍜孾1,n-1]
 	}
 };

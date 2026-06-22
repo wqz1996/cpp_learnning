@@ -1,12 +1,12 @@
-#include<algorithm>//°üº¬¶Ñ²Ù×÷
+#include<algorithm>//åŒ…å«å †æ“ä½œ
 #include<iostream>
 #include<string>
 #include<vector>
 #include<cmath>
-#include<stack>//Õ»
-#include<queue>//¶ÓÁĞ
+#include<stack>//æ ˆ
+#include<queue>//é˜Ÿåˆ—
 using namespace std;
-/********ººÅµËşÎÊÌâ*******/
+/********æ±‰è¯ºå¡”é—®é¢˜*******/
 /*void func(int rest, int down, string from, string help, string to) {
 	if (rest == 1)
 	{
@@ -37,9 +37,9 @@ void process(int N, string from, string to, string help) {
 }
 int main()
 {
-	int n = 3;//Èı²ãººÅµËşÎÊÌâ
+	int n = 3;//ä¸‰å±‚æ±‰è¯ºå¡”é—®é¢˜
 	//hanoi(3);//
-	process(n, "×ó","ÓÒ","ÖĞ");
+	process(n, "å·¦","å³","ä¸­");
 
 	return 0;
 }

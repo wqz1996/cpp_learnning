@@ -1,12 +1,12 @@
-#include<algorithm>//°üº¬¶Ñ²Ù×÷
+#include<algorithm>//åŒ…å«å †æ“ä½œ
 #include<iostream>
 #include<string>
 #include<vector>
 #include<cmath>
-#include<stack>//Õ»
-#include<queue>//¶ÓÁĞ
+#include<stack>//æ ˆ
+#include<queue>//é˜Ÿåˆ—
 using namespace std;
-/********´òÓ¡×Ö·û´®È«ÅÅÁĞ***ÓĞÎÊÌâ´ı½â¾ö****/
+/********æ‰“å°å­—ç¬¦ä¸²å…¨æ’åˆ—***æœ‰é—®é¢˜å¾…è§£å†³****/
 void swap(char s[], int i, int j){
 	char temp = s[i];
 	s[i] = s[j];
@@ -27,7 +27,7 @@ int main()
 {
 	string str = "abc";
 	char s[10];
-	strcpy(s, str.c_str());//string ×ªÎª×Ö·ûÊı×é
+	strcpy(s, str.c_str());//string è½¬ä¸ºå­—ç¬¦æ•°ç»„
 	printAllpermutation(s, 0);
 
 

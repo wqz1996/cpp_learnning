@@ -1,10 +1,10 @@
-#include<algorithm>//°üº¬¶Ñ²Ù×÷
+#include<algorithm>//åŒ…å«å †æ“ä½œ
 #include<iostream>
 #include<string>
 #include<vector>
 #include<cmath>
-#include<stack>//Õ»
-#include<queue>//¶ÓÁĞ
+#include<stack>//æ ˆ
+#include<queue>//é˜Ÿåˆ—
 using namespace std;
 
 struct student {
@@ -17,7 +17,7 @@ student stu[3] = {
 	{2, 19, 90},
 	{3, 20, 70}
 };
-bool comparator(const student& a, const student& b)//°´ÕÕ³É¼¨ÉıĞòÅÅÁĞ 70 88 90
+bool comparator(const student& a, const student& b)//æŒ‰ç…§æˆç»©å‡åºæ’åˆ— 70 88 90
 {
 	return (a.Score < b.Score);
 }
