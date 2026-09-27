@@ -1,20 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // cout：第 67 行首次使用
+#include <string> // string：第 80 行首次使用
+#include <stack> // stack：第 62 行首次使用
+#include <cstddef> // NULL：第 15 行首次使用
 using namespace std;
 /*************437路径总和3******************/
 //给定二叉树，每个节点存放一个整数
@@ -88,12 +75,17 @@ public:
 	}
 
 };
-int main() {
-	string prestr{ "1_2_#_5_#_#_3_#_#_" };//"1_2_#_3_#_#_4_#_#_"
-	TreeNode* head;
-	char* s_char = (char*)prestr.c_str();//string to char*
-	head = Solution().creatTree(s_char);
-	Solution().preOrderUnResur(head);
-	
-	return 0;
-} 
+int main()
+{
+    string encoded = "1_2_#_5_#_#_3_#_#_";
+    char* text = &encoded[0];
+    Solution solution;
+    TreeNode* root = solution.creatTree(text);
+    solution.preOrderUnResur(root);
+    cout << endl << "路径和为 3 的数量: " << solution.pathSum(root, 3) << endl;
+    delete root->left->right;
+    delete root->left;
+    delete root->right;
+    delete root;
+    return 0;
+}

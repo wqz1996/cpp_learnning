@@ -1,20 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <cstdint> // INT32_MIN、INT32_MAX：Solution::findUnsortedSubarray
+#include <algorithm> // min, max：第 20 行首次使用
+#include <iostream> // cout：第 44 行首次使用
+#include <vector> // vector：第 11 行首次使用
 using namespace std;
 /****************281最短无序连续子数组***********************************/
 //给定整数数组，寻找连续子数组，对该子数组排序，则整个数组有序

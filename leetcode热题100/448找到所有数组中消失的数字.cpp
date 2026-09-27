@@ -1,20 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // cout、endl：main 输出两种解法
+#include <vector> // vector：第 12 行首次使用
+#include <cstdlib> // abs：第 38 行首次使用
 using namespace std;
 /**********************448找出所有数组中消失的数字*************************/
 //给定一个范围在  1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，
@@ -62,8 +48,13 @@ public:
 };
 int main()
 {
-	vector<int> nums{ 1,3,3,4,4 };
-	Solution1().findDisappearedNumbers(nums);
-	return 0;
+    const vector<int> input{4, 3, 2, 7, 8, 2, 3, 1};
+    vector<int> a = input, b = input;
+    const auto first = Solution().findDisappearedNumbers(a);
+    const auto second = Solution1().findDisappearedNumbers(b);
+    for (const auto& result : {first, second}) {
+        for (int value : result) cout << value << ' ';
+        cout << endl;
+    }
+    return 0;
 }
-

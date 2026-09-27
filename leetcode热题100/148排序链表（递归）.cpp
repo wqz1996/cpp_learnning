@@ -1,20 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // cout、endl：main 输出两种归并排序结果
+#include <cstddef> // NULL：第 8 行首次使用
 using namespace std;
 /*************148排序链表*****************************/
  struct ListNode {
@@ -99,7 +84,14 @@ public:
 };
 int main()
 {
-
-	return 0;
+    ListNode a3(2), a2(1), a1(4);
+    a1.next = &a2; a2.next = &a3;
+    ListNode b3(2), b2(1), b1(4);
+    b1.next = &b2; b2.next = &b3;
+    for (ListNode* head : {Solution().sortList(&a1), Solution1().sortList(&b1)}) {
+        for (ListNode* node = head; node != nullptr; node = node->next)
+            cout << node->val << ' ';
+        cout << endl;
+    }
+    return 0;
 }
-

@@ -1,18 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
+#include <iostream> // cout, endl：第 60 行首次使用
+#include <vector> // vector：第 8 行首次使用
 using namespace std;
 /************283 Move Zeros*********************/
 //给定数组，将所有0移动到数组末尾，其他元素不变
@@ -61,15 +48,17 @@ public:
 
 	}
 };
-int main() {
-	int arr[] = { 0,1,0,3,12 };
-	vector<int> v(arr, arr + sizeof(arr) / sizeof(int));//使用数组创建vector
-	vector<int> vec{ 0,1,0,3,12 };
-	Solution().moveZeroes3(v);
-	for (int i = 0; i < v.size(); i++) {
-		cout << v[i]<<" ";
-	}
-	cout << endl;
-
-	return 0;
+int main()
+{
+    const vector<int> input{0, 1, 0, 3, 12};
+    vector<int> a = input, b = input, c = input;
+    Solution solution;
+    solution.moveZeroes1(a);
+    solution.moveZeroes2(b);
+    solution.moveZeroes3(c);
+    for (const auto& result : {a, b, c}) {
+        for (int value : result) cout << value << ' ';
+        cout << endl;
+    }
+    return 0;
 }

@@ -1,20 +1,9 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // cout、endl：main 输出前序、中序和后序遍历
+#include <string> // string：第 16 行首次使用
+#include <stack> // stack：第 26 行首次使用
+#include <vector> // vector：第 22 行首次使用
+#include <cassert> // assert：第 35 行首次使用
+#include <cstddef> // NULL：第 13 行首次使用
 using namespace std;
 /************二叉树前序,中序，后序遍历*******************/
  struct TreeNode {
@@ -108,7 +97,17 @@ public:
 	}
 		
 };
-int main() {
-
-	return 0;
-} 
+int main()
+{
+    TreeNode left(1), root(2), right(3);
+    root.left = &left;
+    root.right = &right;
+    Solution solution;
+    for (const auto& result : {solution.preorderTraversal(&root),
+                               solution.inorderTraversal(&root),
+                               solution.postorderTraversal(&root)}) {
+        for (int value : result) cout << value << ' ';
+        cout << endl;
+    }
+    return 0;
+}

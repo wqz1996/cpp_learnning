@@ -1,22 +1,7 @@
-#include <algorithm> //包含堆操作
-#include <assert.h>
-#include <climits>
-#include <cmath>
-#include <ctime>
-#include <deque> //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <hash_map>
-#include <hash_set>
-#include <iostream>
-#include <list> //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <map>
-#include <queue> //队列
-#include <set>
-#include <sstream> //istringstream 可以将string以空格为分隔符分割
-#include <stack>   //栈
-#include <string>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector> //不注重插入和删除效率
+#include <algorithm> // min：第 18 行首次使用
+#include <climits>   // INT_MAX：第 15 行首次使用
+#include <iostream>  // cout, endl：第 117 行首次使用
+#include <vector>    // vector：第 13 行首次使用
 
 using namespace std;
 // 64. 最小路径和
@@ -83,14 +68,26 @@ public:
     return dp[row - 1][col - 1];
   }
 };
-/****************使用一维数组(?)*******************/
+/****************一维动态规划，空间 O(列数)*******************/
 class Solution3 {
 public:
   int minPathSum(vector<vector<int>> &grid) {
     int row = grid.size();
     int col = grid[0].size();
-    vector<int> dp(2, 0);
-    return -1;
+    vector<int> dp(col, 0);
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
+        if (i == 0 && j == 0)
+          dp[j] = grid[i][j];
+        else if (i == 0)
+          dp[j] = dp[j - 1] + grid[i][j];
+        else if (j == 0)
+          dp[j] += grid[i][j];
+        else
+          dp[j] = min(dp[j], dp[j - 1]) + grid[i][j];
+      }
+    }
+    return dp[col - 1];
   }
 };
 /****************直接在原数组上修改*******************/

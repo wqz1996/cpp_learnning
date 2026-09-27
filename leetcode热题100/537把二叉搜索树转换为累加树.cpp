@@ -1,21 +1,7 @@
-#include <algorithm> //包含堆操作
-#include <iostream>
-#include <sstream> //istringstream 可以将string以空格为分隔符分割
-#include <string>
-#include <cmath>
-#include <stack>  //栈
-#include <queue>  //队列
-#include <vector> //不注重插入和删除效率
-#include <list>	  //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <deque>  //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <ctime>
-#include < unordered_map>
-#include < unordered_set>
-#include <hash_map>
-#include <hash_set>
-#include <assert.h>
-#include <set>
-#include <map>
+#include <iostream> // cout、endl：main 输出递归和迭代解法
+#include <string> // string：第 93 行首次使用
+#include <stack> // stack：第 44 行首次使用
+#include <cstddef> // NULL：第 15 行首次使用
 using namespace std;
 // 538. 把二叉搜索树转换为累加树
 // 给定一个二叉搜索树（Binary Search Tree），把它转换成为累加树
@@ -104,10 +90,16 @@ TreeNode *reconBypreString(char *str)
 }
 int main()
 {
-	string s = "5_2_#_#_13_#_#_";
-	char *str = (char *)s.c_str();
-	TreeNode *root = reconBypreString(str);
-	Solution1().convertBST(root);
-
-	return 0;
+    string encoded = "5_2_#_#_13_#_#_";
+    char* firstText = &encoded[0];
+    char* secondText = &encoded[0];
+    TreeNode* first = reconBypreString(firstText);
+    TreeNode* second = reconBypreString(secondText);
+    Solution().convertBST(first);
+    Solution1().convertBST(second);
+    cout << "递归: " << first->left->val << ' ' << first->val << ' ' << first->right->val << endl;
+    cout << "迭代: " << second->left->val << ' ' << second->val << ' ' << second->right->val << endl;
+    delete first->left; delete first->right; delete first;
+    delete second->left; delete second->right; delete second;
+    return 0;
 }

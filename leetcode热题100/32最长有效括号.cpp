@@ -1,20 +1,9 @@
-#include <algorithm> //包含堆操作
-#include <iostream>
-#include <string>
-#include <cmath>
-#include <stack>  //栈
-#include <queue>  //队列
-#include <vector> //不注重插入和删除效率
-#include <list>	  //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <deque>  //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <ctime>
-#include < unordered_map>
-#include < unordered_set>
-#include <hash_map>
-#include <hash_set>
-#include <assert.h>
-#include <set>
-#include <map>
+#include <iostream> // cout、endl：main 输出三种解法
+#include <algorithm> // max：第 36 行首次使用
+#include <string> // string：第 16 行首次使用
+#include <stdexcept> // invalid_argument：输入字符非法时抛出异常
+#include <stack> // stack：第 88 行首次使用
+#include <vector> // vector：第 128 行首次使用
 using namespace std;
 /************32最长有效括号********************/
 // 给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。
@@ -158,6 +147,9 @@ public:
 };
 int main()
 {
-
-	return 0;
+    const string input = ")()())";
+    cout << "双向扫描: " << Solution1().longestValidParentheses(input) << endl;
+    cout << "栈: " << Solution2().longestValidParentheses(input) << endl;
+    cout << "动态规划: " << Solution3().longestValidParentheses(input) << endl;
+    return 0;
 }

@@ -1,20 +1,5 @@
-#include <algorithm> //包含堆操作
-#include <iostream>
-#include <string>
-#include <cmath>
-#include <stack>  //栈
-#include <queue>  //队列
-#include <vector> //不注重插入和删除效率
-#include <list>	  //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <deque>  //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <ctime>
-#include < unordered_map>
-#include < unordered_set>
-#include <hash_map>
-#include <hash_set>
-#include <assert.h>
-#include <set>
-#include <map>
+#include <iostream> // cout、endl：main 输出两种解法
+#include <vector> // vector：第 11 行首次使用
 using namespace std;
 /**********************287寻找重复数*************************/
 // 给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。
@@ -84,5 +69,8 @@ public:
 };
 int main()
 {
-	return 0;
+    vector<int> nums{1, 3, 4, 2, 2};
+    cout << "二分计数: " << Solution().findDuplicate(nums) << endl;
+    cout << "快慢指针: " << Solution1().findDuplicate(nums) << endl;
+    return 0;
 }

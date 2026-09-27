@@ -1,21 +1,8 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // cout、endl：main 输出两种堆实现结果
+#include <utility> // swap：heapbymy 调整堆元素
+#include <queue> // priority_queue：第 10 行首次使用
+#include <vector> // vector：第 9 行首次使用
+#include <functional> // greater：第 10 行首次使用
 using namespace std;
 class Solution {
 public:
@@ -75,9 +62,9 @@ public:
 };
 int main()
 {
-	vector<int> nums{ 3, 2, 3, 1, 2, 4, 5, 5, 6 };
-	heapbymy().findKthLargest(nums, 4);
-
-	return 0;
+    vector<int> first{3, 2, 1};
+    vector<int> second = first;
+    cout << "标准优先队列: " << Solution().findKthLargest(first, 1) << endl;
+    cout << "自写堆: " << heapbymy().findKthLargest(second, 1) << endl;
+    return 0;
 }
-
