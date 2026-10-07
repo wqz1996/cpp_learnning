@@ -59,11 +59,11 @@ int main() {
   double total_time = 50.0;                         // 总时间
   double sample_rate = 20.0;                        // 采样频率 Hz
   int signalLength = int(total_time * sample_rate); // 信号长度
-  double frequency = 1.0;                           // 正弦波频率
+  double frequency = 0.5;                           // 正弦波频率
   std::vector<double> inputSignal(signalLength);
   std::default_random_engine generator;
   std::normal_distribution<double> distribution(
-      0.0, 0.1); // 均值为0，标准差为0.01的正态分布
+      0.01, 0.1); // 均值为0，标准差为0.01的正态分布
   vector<double> time_line(signalLength);
   double start = 0;
   for (int i = 0; i < signalLength; i++) {
@@ -81,7 +81,7 @@ int main() {
   std::vector<double> outputSignal = applyFIRFilter(inputSignal, filterCoeff);
 
   // 保存信号到文件
-  std::ofstream fout("/home/wu/local_test_py_tool/control_related/C++/"
+  std::ofstream fout("/home/plusai/local_test_py_tool/control_related/C++/"
                      "fir_filter/debug_file/data.txt",
                      std::ios::app);
   fout << "Time:" << std::endl;

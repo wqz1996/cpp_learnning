@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # 读取数据
 with open(
-        '/home/wu/local_test_py_tool/control_related/C++/fir_filter/debug_file/data.txt',
+        '/home/plusai/local_test_py_tool/control_related/C++/fir_filter/debug_file/data.txt',
         'r') as file:
     lines = file.readlines()
 

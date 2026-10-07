@@ -95,7 +95,7 @@ int main() {
   }
 
   // 保存信号到文件
-  ofstream fout("/home/wu/local_test_py_tool/control_related/C++/"
+  ofstream fout("/home/plusai/local_test_py_tool/control_related/C++/"
                 "iir_filter/debug_file/data.txt",
                 ios::app);
   fout << "Time:" << endl;
