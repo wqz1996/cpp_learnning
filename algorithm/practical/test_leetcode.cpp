@@ -1,25 +1,28 @@
-#include <algorithm> // 使用处：第 28 行的 min(
-#include <iostream> // 使用处：第 74 行的 cout
-#include <vector> // 使用处：第 23 行的 vector
+// 原理总结：这是凸多边形相交的分离轴定理示例，与 polygons_overlap.cpp 相同。
+// 分别沿两个多边形各边的法线投影；某个投影区间分离就说明不相交。
+// 所有候选轴均重叠时判为相交，边界接触也算相交。
+#include <algorithm>
+#include <iostream>
+#include <vector>
 
 struct Point {
   double x, y;
 };
 
-// 计算向量叉积
+// 二维叉积；本示例的重叠检测未调用这个辅助函数。
 double crossProduct(const Point &a, const Point &b) {
   return a.x * b.y - a.y * b.x;
 }
 
-// 计算向量的差
+// 两点相减得到边的方向向量。
 Point operator-(const Point &a, const Point &b) {
   return {a.x - b.x, a.y - b.y};
 }
 
-// 计算点在轴上的投影
+// 点积给出轴方向的投影标量。
 double dot(const Point &a, const Point &b) { return a.x * b.x + a.y * b.y; }
 
-// 计算投影的最小和最大值
+// 遍历顶点得到投影区间的两端。
 void projectPolygon(const Point &axis, const std::vector<Point> &polygon,
                     double &min, double &max) {
   min = max = dot(axis, polygon[0]);
@@ -30,15 +33,16 @@ void projectPolygon(const Point &axis, const std::vector<Point> &polygon,
   }
 }
 
-// 检查两个投影是否重叠
+// 闭区间有交集就算重叠，包括边界接触。
 bool overlap(double minA, double maxA, double minB, double maxB) {
   return std::max(minA, minB) <= std::min(maxA, maxB);
 }
 
-// 检查多边形是否重叠
+// 输入需为按边界顺序排列的非空凸多边形。
 bool polygonsOverlap(const std::vector<Point> &poly1,
                      const std::vector<Point> &poly2) {
   for (int i = 0; i < poly1.size(); ++i) {
+    // 检查第一个多边形每条边的法线。
     Point edge = poly1[i] - poly1[(i + 1) % poly1.size()];
     Point axis = {-edge.y, edge.x}; // 边的法线
 
@@ -51,6 +55,7 @@ bool polygonsOverlap(const std::vector<Point> &poly1,
   }
 
   for (int i = 0; i < poly2.size(); ++i) {
+    // 第二个多边形的法线也可能是唯一的分离轴。
     Point edge = poly2[i] - poly2[(i + 1) % poly2.size()];
     Point axis = {-edge.y, edge.x}; // 边的法线
 

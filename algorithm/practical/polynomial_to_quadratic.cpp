@@ -1,5 +1,8 @@
-#include <Eigen/Dense> // 使用处：第 5 行的 Eigen
-#include <iostream> // 使用处：第 24 行的 cout
+// 原理总结：二元二次多项式 ax² + bxy + cy² + dx + ey + f
+// 可写为 zᵀAz + Bᵀz + f，其中 z = [x,y]ᵀ，A = [[a,b/2],[b/2,c]]，B = [d,e]ᵀ。
+// 交叉项由对称矩阵的两个非对角元素共同产生，所以各放入 b/2。
+#include <Eigen/Dense>
+#include <iostream>
 
 using namespace std;
 using namespace Eigen;
@@ -7,17 +10,17 @@ using namespace Eigen;
 // 将二元二次多项式转化为二次型
 void polynomialToQuadraticForm(double a, double b, double c, double d, double e,
                                double f) {
-  // 定义2x2的对称矩阵A
+  // 对称矩阵 A 保存二次项系数。
   Matrix2d A;
   // a,c为二次项系数，b为xy交叉项系数，d,e为一次项系数，f为常数项
   A << a, b / 2, b / 2, c;
 
-  // 定义2x1的向量x和b
+  // z 是示例中的自变量取值，B 保存一次项系数。
   Vector2d x, B;
-  x << 0, 0; // 初始化x向量，这里假设x向量的值未知
+  x << 0, 0; // 这里在 (0,0) 处计算 Q；改变 x 可计算其他位置的值。
   B << d, e; // b向量的值对应于多项式中的线性项
 
-  // 计算二次型
+  // 代入当前 x，计算多项式在该点的值。
   double Q = x.transpose() * A * x + B.transpose() * x + f;
 
   // 打印矩阵A和向量B

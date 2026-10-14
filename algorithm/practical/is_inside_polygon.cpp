@@ -1,21 +1,22 @@
-#include <algorithm> // 使用处：第 14 行的 max(
-#include <iostream> // 使用处：第 74 行的 cout
-#include <vector> // 使用处：第 49 行的 vector
-// 射线法（Ray Casting
-// Algorithm）。该方法的基本思想是从待测点向任意方向发射一条射线，
-// 然后计算这条射线与多边形各边的交点数量。如果交点数量为奇数，点在多边形内部；如果为偶数，点在多边形外部。
+// 原理总结：从待测点向右发射射线，统计射线穿过多边形边的次数。
+// 穿过奇数次表示内部，偶数次表示外部；若点恰在线段上则直接判为内部。
+// 本示例用有限远点和通用线段相交判断，射线恰好经过顶点时可能重复计数。
+#include <algorithm>
+#include <iostream>
+#include <vector>
 
 struct Point {
   double x, y;
 };
 
-// 检查点c是否在线段ab一
+// 在已知三点共线时，检查 c 是否位于 a、b 的坐标范围内。
 bool onSegment(const Point &a, const Point &b, const Point &c) {
   return c.x <= std::max(a.x, b.x) && c.x >= std::min(a.x, b.x) &&
          c.y <= std::max(a.y, b.y) && c.y >= std::min(a.y, b.y);
 }
 
 double crossProduct(const Point &a, const Point &b, const Point &c) {
+  // (b-a)×(c-a) 的符号表示 c 位于有向边 ab 的哪一侧。
   double abX = b.x - a.x;
   double abY = b.y - a.y;
   double acX = c.x - a.x;
@@ -23,7 +24,7 @@ double crossProduct(const Point &a, const Point &b, const Point &c) {
   return abX * acY - abY * acX;
 }
 
-// 检查线段ab和线段cd是否相于
+// 通过叉积符号判断两线段是否跨过对方；共线时再检查端点是否落在线段上。
 bool doIntersect(const Point &a, const Point &b, const Point &c,
                  const Point &d) {
   double d1 = crossProduct(a, b, c);
@@ -45,13 +46,13 @@ bool doIntersect(const Point &a, const Point &b, const Point &c,
   return false;
 }
 
-// 判断点p是否在多边形内部
+// 逐边统计与水平射线的交点，并单独处理点在边上的情况。
 bool isInsidePolygon(const std::vector<Point> &polygon, const Point &p) {
   int n = polygon.size();
   if (n < 3)
     return false; // 少于3一顶点不是多边形
 
-  Point extreme = {1e9, p.y}; // 创建一一足够远的点
+  Point extreme = {1e9, p.y}; // 射线右端点；要求它在多边形最右侧之外。
 
   int count = 0;
   for (int i = 0; i < n; i++) {

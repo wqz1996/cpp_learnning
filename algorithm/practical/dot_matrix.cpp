@@ -1,17 +1,20 @@
-#include <iostream> // 使用处：第 37 行的 cout
-#include <vector> // 使用处：第 4 行的 vector
+// 原理总结：矩阵乘法中 C[i][j] 是 A 第 i 行与 B 第 j 列的点积。
+// 用三层循环枚举结果行、结果列和求和下标 k，计算 C[i][j] += A[i][k] * B[k][j]。
+// 假设矩阵非空、每行长度一致，且 A 的列数等于 B 的行数。
+#include <iostream>
+#include <vector>
 
 std::vector<std::vector<int>>
 matrixMultiply(const std::vector<std::vector<int>> &A,
                const std::vector<std::vector<int>> &B) {
-  int m = A.size();    // A的行数
-  int n = A[0].size(); // A的列数
-  int p = B[0].size(); // B的列数
+  int m = A.size();    // 结果矩阵的行数。
+  int n = A[0].size(); // 求和项的个数，也是 B 的行数。
+  int p = B[0].size(); // 结果矩阵的列数。
 
-  // 初始化结果矩阵C
+  // 累加前将结果矩阵初始化为 0。
   std::vector<std::vector<int>> C(m, std::vector<int>(p, 0));
 
-  // 执行矩阵乘法
+  // 固定结果元素 (i, j)，沿公共维度 k 累加乘积。
   for (int i = 0; i < m; ++i) {
     for (int j = 0; j < p; ++j) {
       for (int k = 0; k < n; ++k) {

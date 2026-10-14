@@ -2,16 +2,16 @@
 // 的已知最小代价，h 用曼哈顿距离估计到终点的剩余代价。
 // 本例只允许四向移动，且每步代价至少为 1，因此 h 不高估实际剩余代价；
 // 找到终点后沿前驱节点回溯，即可得到最短路径。
-#include <cstddef> // 使用处：第 36 行的 size_t
-#include <utility> // 使用处：第 89 行的 pair
-#include <functional> // 使用处：第 35 行的 hash<
-#include <algorithm> // 使用处：第 150 行的 reverse(
-#include <cmath> // 使用处：第 105 行的 abs
-#include <iostream> // 使用处：第 183 行的 cout
-#include <queue> // 使用处：第 90 行的 priority_queue
+#include <algorithm>     // 使用处：第 150 行的 reverse(
+#include <cmath>         // 使用处：第 105 行的 abs
+#include <cstddef>       // 使用处：第 36 行的 size_t
+#include <functional>    // 使用处：第 35 行的 hash<
+#include <iostream>      // 使用处：第 183 行的 cout
+#include <queue>         // 使用处：第 90 行的 priority_queue
 #include <unordered_map> // 使用处：第 47 行的 unordered_map
 #include <unordered_set> // 使用处：第 46 行的 unordered_set
-#include <vector> // 使用处：第 69 行的 vector
+#include <utility>       // 使用处：第 89 行的 pair
+#include <vector>        // 使用处：第 69 行的 vector
 
 using namespace std;
 

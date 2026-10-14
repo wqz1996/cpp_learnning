@@ -1,12 +1,8 @@
-#include <iostream> // 使用处：第 45 行的 cout
-#include <vector> // 使用处：第 25 行的 vector
-//可以通过检查多边形每个内角的转向来完成。对于凸多边形，沿着顶点顺序遍历时，
-//所有内角的转向都相同（要么都是顺时针，要么都是逆时针）。如果发现至少一个内角的转向与其他不同，多边形就是凹的。
-
-//我们可以通过计算相邻边的叉积来确定每个内角的转向。对于三个连续的顶点
-// AA、BB、CC，向量 ABAB 和向量 BCBC 的叉积可以告诉我们顶点
-// BB
-//的转向是顺时针还是逆时针。
+// 原理总结：依次计算多边形相邻边的叉积，比较每个顶点的转向。
+// 非零叉积若始终同号，边界一直朝同一方向转，可判为凸多边形。
+// 若出现正负两种转向则为凹多边形；此方法假设顶点按边界顺序排列且多边形简单。
+#include <iostream>
+#include <vector>
 struct Point {
   double x, y;
 };
@@ -27,20 +23,24 @@ bool isConvexPolygon(const std::vector<Point> &points) {
   if (n < 3)
     return false; // 少于3个顶点不是多边形
 
-  bool sign = false;
+  int sign = 0; // 记录首次出现的非零转向方向。
   for (int i = 0; i < n; ++i) {
     double cross =
         crossProduct(points[i], points[(i + 1) % n], points[(i + 2) % n]);
-    if (i == 0)
-      sign = cross > 0;
-    else if ((cross > 0) != sign)
+    if (cross == 0)
+      continue; // 共线的相邻边不改变转向。
+    int currentSign = cross > 0 ? 1 : -1;
+    if (sign == 0)
+      sign = currentSign;
+    else if (currentSign != sign)
       return false; // 发现与其他顶点转向不同
   }
-  return true;
+  return sign != 0; // 全部共线时不能构成有效多边形。
 }
 
 int main() {
-  std::vector<Point> points = {{0, 0}, {1, 1}, {1, 0}, {0, 1}};
+  // 顶点按边界顺序排列，(1,1) 形成向内凹陷。
+  std::vector<Point> points = {{0, 0}, {2, 0}, {1, 1}, {2, 2}, {0, 2}};
   bool convex = isConvexPolygon(points);
   std::cout << "The polygon is " << (convex ? "convex" : "concave") << "."
             << std::endl;
