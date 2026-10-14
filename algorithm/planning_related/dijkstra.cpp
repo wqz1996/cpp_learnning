@@ -1,3 +1,6 @@
+// Dijkstra 在非负权网格上按起点到节点的已知最小代价扩展节点。
+// 每次取出当前代价最低的节点，若经过它能以更低代价到达邻居，
+// 就更新邻居的代价及前驱；到达终点后沿前驱回溯得到最短路径。
 #include <algorithm>
 #include <cmath>
 #include <iostream>
@@ -9,6 +12,7 @@
 
 using namespace std;
 
+// 网格坐标作为哈希容器的键，也用于同优先级节点的排序。
 struct GridLocation {
   int x, y;
 
@@ -24,6 +28,7 @@ struct GridLocation {
 };
 
 namespace std {
+// 为 GridLocation 提供哈希函数，以便存入 unordered_map / unordered_set。
 template <> struct hash<GridLocation> {
   size_t operator()(const GridLocation &id) const noexcept {
     return hash<int>()(id.x ^ (id.y << 4));
@@ -31,6 +36,7 @@ template <> struct hash<GridLocation> {
 };
 } // namespace std
 
+// 网格保存障碍和进入各格子的代价；只允许在边界内向上下左右移动。
 class GridWithWeights {
 public:
   int width, height;
@@ -49,6 +55,7 @@ public:
 
   double Cost(const GridLocation &from_node,
               const GridLocation &to_node) const {
+    // 边的代价由目标格决定，未单独设置的格子代价为 1。
     auto iter = weights.find(to_node);
     if (iter != weights.end()) {
       return iter->second;
@@ -73,6 +80,7 @@ public:
   }
 };
 
+// 小顶堆始终先取出已知代价最低的候选节点。
 template <typename T, typename Number = double> struct PriorityQueue {
   typedef pair<Number, T> PQElement;
   priority_queue<PQElement, vector<PQElement>, greater<PQElement>> elements;
@@ -88,6 +96,7 @@ template <typename T, typename Number = double> struct PriorityQueue {
   }
 };
 
+// 此示例保留了曼哈顿距离函数，Dijkstra 搜索不使用启发式估计。
 inline double Heuristic(const GridLocation &a, const GridLocation &b) {
   return abs(a.x - b.x) + abs(a.y - b.y);
 }
@@ -102,6 +111,7 @@ void Dijkstra(const GridWithWeights &grid, const GridLocation &start,
   came_from[start] = start;
   cost_so_far[start] = 0.0;
 
+  // 扩展当前代价最低的节点，到达终点即可结束搜索。
   while (!frontier.Empty()) {
     GridLocation current = frontier.Get();
 
@@ -111,6 +121,7 @@ void Dijkstra(const GridWithWeights &grid, const GridLocation &start,
 
     for (GridLocation &next : grid.Neighbors(current)) {
       double new_cost = cost_so_far[current] + grid.Cost(current, next);
+      // 发现更便宜的路径时，更新邻居代价及前驱，并重新加入队列。
       if (!cost_so_far.count(next) || new_cost < cost_so_far[next]) {
         cost_so_far[next] = new_cost;
         double priority = new_cost;
@@ -124,6 +135,7 @@ void Dijkstra(const GridWithWeights &grid, const GridLocation &start,
 vector<GridLocation>
 ReconstructPath(const GridLocation &start, const GridLocation &goal,
                 unordered_map<GridLocation, GridLocation> &came_from) {
+  // 从终点沿前驱回溯，再反转为起点到终点的顺序；调用前需确认终点可达。
   vector<GridLocation> path;
   GridLocation current = goal;
   while (current != start) {
@@ -136,6 +148,7 @@ ReconstructPath(const GridLocation &start, const GridLocation &goal,
 }
 
 int main() {
+  // 设置障碍和高代价格子，搜索并打印示例路径。
   GridWithWeights grid(10, 10);
   grid.walls.insert(
       {GridLocation{1, 7}, GridLocation{2, 7}, GridLocation{3, 7}});
