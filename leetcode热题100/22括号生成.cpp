@@ -1,5 +1,5 @@
-#include <string> // string：第 9 行首次使用
-#include <vector> // vector：第 9 行首次使用
+#include <string> // 使用处：第 9 行的 string
+#include <vector> // 使用处：第 9 行的 vector
 using namespace std;
 /****************22括号生成***********************************/
 //给定n为括号的对数，生成所有可能的组合

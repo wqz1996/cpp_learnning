@@ -1,6 +1,5 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <iostream> // 使用处：第 30 行的 cout
+#include <vector> // 使用处：第 4 行的 vector
 using namespace std;
 void mergesort(vector<int> &arr, int L, int R) {
   if (L == R)

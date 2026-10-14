@@ -1,6 +1,5 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <iostream> // 使用处：第 18 行的 cout
+#include <vector> // 使用处：第 4 行的 vector
 using namespace std;
 void insertsort(vector<double> &arr) {
   for (int i = 1; i < arr.size(); i++) {

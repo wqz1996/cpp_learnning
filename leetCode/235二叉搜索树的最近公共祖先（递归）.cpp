@@ -1,20 +1,8 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <cstddef> // 使用处：第 14 行的 NULL
+#include <iostream> // 使用处：第 56 行的 cout
+#include <string> // 使用处：第 68 行的 string
+#include <stack> // 使用处：第 51 行的 stack
+#include <assert.h> // 使用处：第 19 行的 assert(
 using namespace std;
 /*************235二叉搜索树的最近公共祖先******************/
 //给定二叉搜索树，找到指定两个节点的最近公共祖先

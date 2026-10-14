@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <cstddef> // 使用处：第 171 行的 NULL
+#include <stack> // 使用处：第 36 行的 stack
+#include <stdio.h> // 使用处：第 181 行的 printf
 
 /*
 C primer plus P331

@@ -1,20 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <algorithm> // 使用处：第 53 行的 copy(
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //面试题51. 数组中的逆序对
 // 题目：在数组中的两个数字，如果前面一个数字大于后面的数字，

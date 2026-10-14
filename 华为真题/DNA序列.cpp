@@ -1,21 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <algorithm> // 使用处：第 33 行的 max(
+#include <iostream> // 使用处：第 21 行的 cin
+#include <string> // 使用处：第 9 行的 string
 using namespace std;
 //一个DNA序列由A/C/G/T四个字母的排列组合组成。G和C的比例（定义为GC-Ratio）是序列中G和C两个字母的总的出现次数除以总
 //的字母数目（也就是序列长度）。在基因工程中，这个比例非常重要。因为高的GC-Ratio可能是基因的起始点。

@@ -1,21 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <cstdlib> // 使用处：第 32 行的 rand
+#include <algorithm> // 使用处：第 10 行的 swap(
+#include <vector> // 使用处：第 5 行的 vector
 using namespace std;
 vector<int> partition(vector<int>& arr, int L, int R) {
 	int less = L - 1;//从L前一个开始作为less区域

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream> // 使用处：第 5 行的 cin
 using namespace std;
 int main() {
 	int  n;

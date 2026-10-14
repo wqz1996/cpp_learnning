@@ -1,21 +1,6 @@
-#include <algorithm> //包含堆操作
-#include <iostream>
-#include <sstream> //istringstream 可以将string以空格为分隔符分割
-#include <string>
-#include <cmath>
-#include <stack>  //栈
-#include <queue>  //队列
-#include <vector> //不注重插入和删除效率
-#include <list>	  //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <deque>  //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <ctime>
-#include < unordered_map>
-#include < unordered_set>
-#include <hash_map>
-#include <hash_set>
-#include <assert.h>
-#include <set>
-#include <map>
+#include <algorithm> // 使用处：第 25 行的 min(
+#include <string> // 使用处：第 12 行的 string
+#include <vector> // 使用处：第 16 行的 vector
 using namespace std;
 // 编辑距离
 // 将一个字符串删除、插入、替换变成目标字符串，最少次数

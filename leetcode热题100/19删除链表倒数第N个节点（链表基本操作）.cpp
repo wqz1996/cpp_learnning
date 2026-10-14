@@ -1,3 +1,4 @@
+#include <cstddef> // 使用处：第 14 行的 NULL
  class Solution {
  public:
 	 ListNode* removeNthFromEnd(ListNode* head, int n) {

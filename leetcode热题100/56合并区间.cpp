@@ -1,5 +1,5 @@
-#include <algorithm> // sort, max：第 13 行首次使用
-#include <vector> // vector：第 6 行首次使用
+#include <algorithm> // 使用处：第 13 行的 sort(
+#include <vector> // 使用处：第 6 行的 vector
 using namespace std;
 //56. 合并区间
 //给出一个区间的集合，请合并所有重叠的区间。

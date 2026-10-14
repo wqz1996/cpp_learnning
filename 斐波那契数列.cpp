@@ -1,10 +1,4 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <iostream> // 使用处：第 72 行的 cout
 using namespace std;
 /********斐波那契数列*******/
 int Fbi(int i)//(递归方法生成)返回第i个数的数值

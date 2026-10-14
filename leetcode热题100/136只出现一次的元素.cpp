@@ -1,6 +1,6 @@
-#include <iostream> // cout, endl：第 46 行首次使用
-#include <vector> // vector：第 11 行首次使用
-#include <unordered_map> // unordered_map：第 12 行首次使用
+#include <iostream> // 使用处：第 46 行的 cout
+#include <vector> // 使用处：第 11 行的 vector
+#include <unordered_map> // 使用处：第 12 行的 unordered_map
 using namespace std;
 /****************136只出现一次的数字***********************************/
 //给定非空数组，只有一个元素出现一次，其他都出现两次

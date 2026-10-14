@@ -1,10 +1,9 @@
-#include <algorithm>
-#include <cmath>
-#include <deque>
-#include <fstream>
-#include <iostream>
-#include <random>
-#include <vector>
+#include <cmath> // 使用处：第 61 行的 sin
+#include <deque> // 使用处：第 12 行的 deque
+#include <fstream> // 使用处：第 96 行的 ofstream
+#include <iostream> // 使用处：第 98 行的 ios
+#include <random> // 使用处：第 49 行的 default_random_engine
+#include <vector> // 使用处：第 14 行的 vector
 
 using namespace std;
 

@@ -1,14 +1,16 @@
 // Dijkstra 在非负权网格上按起点到节点的已知最小代价扩展节点。
 // 每次取出当前代价最低的节点，若经过它能以更低代价到达邻居，
 // 就更新邻居的代价及前驱；到达终点后沿前驱回溯得到最短路径。
-#include <algorithm>
-#include <cmath>
-#include <iostream>
-#include <limits>
-#include <queue>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
+#include <cstddef> // 使用处：第 35 行的 size_t
+#include <utility> // 使用处：第 87 行的 pair
+#include <functional> // 使用处：第 34 行的 hash<
+#include <algorithm> // 使用处：第 148 行的 reverse(
+#include <cmath> // 使用处：第 103 行的 abs
+#include <iostream> // 使用处：第 169 行的 cout
+#include <queue> // 使用处：第 88 行的 priority_queue
+#include <unordered_map> // 使用处：第 46 行的 unordered_map
+#include <unordered_set> // 使用处：第 45 行的 unordered_set
+#include <vector> // 使用处：第 68 行的 vector
 
 using namespace std;
 

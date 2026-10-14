@@ -1,21 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <climits> // 使用处：第 40 行的 INT_MIN
+#include <algorithm> // 使用处：第 46 行的 max(
+#include <vector> // 使用处：第 37 行的 vector
 using namespace std;
 //买卖股票121一次122无数次123两次，188k次
 //第一题是只进行一次交易，相当于 k = 1；第二题是不限交易次数，相当于 k = +infinity（正无穷）；第三题是只进行 2 次交易，相当于 k = 2；剩下两道也是不限次数，但是加了交易「冷冻期」和「手续费」的额外条件，其实就是第二题的变种，都很容易处理。

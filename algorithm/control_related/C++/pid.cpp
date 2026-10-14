@@ -1,6 +1,5 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 51 行的 swap(
+#include <iostream> // 使用处：第 95 行的 cout
 using namespace std;
 
 template <typename T> struct BoundParam {

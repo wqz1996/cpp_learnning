@@ -1,13 +1,8 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
+#include <cstddef> // 使用处：第 62 行的 NULL
+#include <algorithm> // 使用处：第 140 行的 swap(
+#include <iostream> // 使用处：第 33 行的 cout
+#include <stack> // 使用处：第 15 行的 stack
+#include <queue> // 使用处：第 124 行的 queue
 using namespace std;
 /*******************基本类型实现栈、队列等*******************************************/
 /****************实现特殊的栈，在栈中返回最小元素，要求pop，push，getmin时间复杂度为O(1)*********************/

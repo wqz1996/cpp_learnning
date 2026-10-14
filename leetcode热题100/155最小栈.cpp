@@ -1,7 +1,7 @@
-#include <algorithm> // min：第 22 行首次使用
-#include <stack> // stack：第 11 行首次使用
-#include <vector> // vector：第 41 行首次使用
-#include <climits> // INT_MAX：第 14 行首次使用
+#include <algorithm> // 使用处：第 22 行的 min(
+#include <stack> // 使用处：第 11 行的 stack
+#include <vector> // 使用处：第 41 行的 vector
+#include <climits> // 使用处：第 14 行的 INT_MAX
 using namespace std;
 /**********************4最小栈*************************/
 /*************用栈实现*************************/

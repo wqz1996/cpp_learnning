@@ -1,3 +1,8 @@
+#include <algorithm> // 使用处：第 16 行的 reverse(
+#include <cstdint> // 使用处：第 44 行的 INT64_MAX
+#include <string> // 使用处：第 7 行的 string
+using namespace std;
+
 //10进制转化为2~36进制
 string intToA(long long n, int radix)    //n是待转数字，radix是指定的进制
 {

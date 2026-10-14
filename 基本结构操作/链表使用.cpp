@@ -1,6 +1,10 @@
+#include <cstddef> // 使用处：第 20 行的 NULL
+#include <list> // 使用处：第 34 行的 list
+#include <stdio.h> // 使用处：第 148 行的 printf
+#include <cstdlib> // 使用处：第 19 行的 malloc
+#include <cstring> // 使用处：第 26 行的 memset(
 
-#include<iostream>
-#include <string>
+#include <iostream> // 使用处：第 22 行的 cout
 using namespace std;
 typedef struct Linklist
 {

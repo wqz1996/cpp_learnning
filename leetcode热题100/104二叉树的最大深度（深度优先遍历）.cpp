@@ -1,5 +1,5 @@
-#include <algorithm> // max：第 21 行首次使用
-#include <cstddef> // NULL：第 10 行首次使用
+#include <algorithm> // 使用处：第 21 行的 max(
+#include <cstddef> // 使用处：第 10 行的 NULL
 using namespace std;
 /*************104二叉树的最大深度******************/
 

@@ -1,10 +1,5 @@
-#include <algorithm>
-#include <cmath>
-#include <deque>
-#include <fstream>
-#include <iostream>
-#include <random>
-#include <vector>
+#include <deque> // 使用处：第 9 行的 deque
+#include <vector> // 使用处：第 8 行的 vector
 
 using namespace std;
 

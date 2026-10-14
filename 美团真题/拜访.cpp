@@ -1,21 +1,4 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <vector> // 使用处：第 11 行的 vector
 using namespace std;
 //现在有一个城市销售经理，需要从公司出发，去拜访市内的商家，已知他的位置以及商家的位置
 //但是由于城市道路交通的原因，他只能在左右中选择一个方向，在上下中选择一个方向，现在问

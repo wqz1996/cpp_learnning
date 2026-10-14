@@ -1,5 +1,6 @@
-#include <iostream>
-#include <string>
+#include <algorithm> // 使用处：第 9 行的 swap(
+#include <iostream> // 使用处：第 7 行的 cin
+#include <string> // 使用处：第 6 行的 string
 using namespace std;
 int main() {
 	string s1,s2;

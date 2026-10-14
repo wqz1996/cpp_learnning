@@ -1,7 +1,7 @@
-#include <cstdlib> // malloc：creat_node 分配节点
-#include <iostream> // cout, endl：第 35 行首次使用
-#include <vector> // vector：第 89 行首次使用
-#include <cstddef> // NULL：第 10 行首次使用
+#include <cstdlib> // 使用处：第 13 行的 malloc
+#include <iostream> // 使用处：第 35 行的 cout
+#include <vector> // 使用处：第 89 行的 vector
+#include <cstddef> // 使用处：第 10 行的 NULL
 using namespace std;
 /**********************234回文链表*************************/
  struct ListNode {

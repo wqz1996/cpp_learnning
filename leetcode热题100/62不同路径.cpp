@@ -1,5 +1,5 @@
-#include <iostream> // cout、endl：main 输出两种解法
-#include <vector> // vector：第 10 行首次使用
+#include <iostream> // 使用处：第 62 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //56. 合并区间
 //给出一个区间的集合，请合并所有重叠的区间。

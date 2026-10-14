@@ -1,21 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <algorithm> // 使用处：第 31 行的 min(
+#include <iostream> // 使用处：第 17 行的 cin
+#include <string> // 使用处：第 16 行的 string
+#include <vector> // 使用处：第 20 行的 vector
 #define N 100
 using namespace std;
 //lev[i][j]用来表示字符串a的[1...i]和字符串b[1...j]的levenshtein距离；

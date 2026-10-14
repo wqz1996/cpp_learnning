@@ -1,3 +1,5 @@
+#include <cstddef> // 使用处：第 9 行的 NULL
+#include <cstring> // 使用处：第 40 行的 strlen(
 class String
 
 {

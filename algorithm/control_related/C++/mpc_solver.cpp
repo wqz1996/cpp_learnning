@@ -1,9 +1,11 @@
-#include "control_v2/common/mpc_solver.h"
+#include <cmath> // 使用处：第 183 行的 exp
+#include <vector> // 使用处：第 82 行的 vector
+#include "mpc_solver.h" // 使用处：第 20 行的 MpcSolver
 
-#include <logging/plus_logger.h>
-#include <metrics/macros.h>
+#include <logging/plus_logger.h> // 使用处：第 14 行的 plusai::common::logging
+#include <metrics/macros.h> // 使用处：第 84 行的 SCOPED_TIMER
 
-#include "monitor/status_reporter.h"
+#include "monitor/status_reporter.h" // 使用处：第 13 行的 monitor_msg
 
 using namespace drive::common::monitor;
 namespace drive {

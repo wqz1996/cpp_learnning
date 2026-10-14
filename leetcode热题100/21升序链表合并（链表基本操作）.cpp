@@ -1,4 +1,4 @@
-#include <cstddef> // NULL：第 18 行首次使用
+#include <cstddef> // 使用处：第 18 行的 NULL
 using namespace std;
 /*************21合并两个有序链表*****************************/
 //将两个升序链表合成一个新的升序链表

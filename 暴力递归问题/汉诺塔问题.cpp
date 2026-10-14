@@ -1,10 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <iostream> // 使用处：第 24 行的 cout
+#include <string> // 使用处：第 22 行的 string
 using namespace std;
 /********汉诺塔问题*******/
 /*void func(int rest, int down, string from, string help, string to) {

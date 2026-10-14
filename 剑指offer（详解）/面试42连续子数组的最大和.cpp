@@ -1,20 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <algorithm> // 使用处：第 15 行的 max(
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //面试题42. 连续子数组的最大和
 // 题目：输入一个整型数组，数组里有正数也有负数。

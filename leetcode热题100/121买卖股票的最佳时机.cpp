@@ -1,7 +1,7 @@
-#include <cstdint> // INT32_MIN、INT32_MAX：三个 maxProfit 方法
-#include <algorithm> // max, min：第 15 行首次使用
-#include <iostream> // cout, endl：第 68 行首次使用
-#include <vector> // vector：第 10 行首次使用
+#include <cstdint> // 使用处：第 53 行的 INT32_MAX
+#include <algorithm> // 使用处：第 15 行的 max(
+#include <iostream> // 使用处：第 68 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 /****************121买卖股票的最佳时机*********************************/
 /*****************暴力搜索************************/

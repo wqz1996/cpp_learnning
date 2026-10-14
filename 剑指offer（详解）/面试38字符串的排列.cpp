@@ -1,20 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <algorithm> // 使用处：第 38 行的 sort(
+#include <string> // 使用处：第 11 行的 string
+#include <vector> // 使用处：第 11 行的 vector
+#include <unordered_set> // 使用处：第 49 行的 unordered_set
 using namespace std;
 //面试题38. 字符串的排列
 // 题目：输入一个字符串，打印出该字符串中字符的所有排列。

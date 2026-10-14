@@ -1,13 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
+#include <algorithm> // 使用处：第 11 行的 max(
+#include <iostream> // 使用处：第 18 行的 cout
 using namespace std;
 int getMax(int arr[], int L, int R) {//寻找数组中最大值：将数组分为左右，左边最大值和右边最大值的最大值即为全局最大值
 	if (L == R) {

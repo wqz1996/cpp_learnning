@@ -1,6 +1,5 @@
-#include <cmath>
-#include <iostream>
-#include <vector>
+#include <cmath> // 使用处：第 13 行的 abs
+#include <iostream> // 使用处：第 23 行的 cout
 using namespace std;
 //计算三角形面积
 //海伦公式

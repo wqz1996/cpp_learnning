@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+#include <iostream> // 使用处：第 37 行的 cout
+#include <vector> // 使用处：第 4 行的 vector
 
 std::vector<std::vector<int>>
 matrixMultiply(const std::vector<std::vector<int>> &A,

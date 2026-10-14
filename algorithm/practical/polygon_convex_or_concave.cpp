@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+#include <iostream> // 使用处：第 45 行的 cout
+#include <vector> // 使用处：第 25 行的 vector
 //可以通过检查多边形每个内角的转向来完成。对于凸多边形，沿着顶点顺序遍历时，
 //所有内角的转向都相同（要么都是顺时针，要么都是逆时针）。如果发现至少一个内角的转向与其他不同，多边形就是凹的。
 

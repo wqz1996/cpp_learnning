@@ -1,6 +1,6 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 10 行的 swap(
+#include <iostream> // 使用处：第 30 行的 cout
+#include <vector> // 使用处：第 5 行的 vector
 using namespace std;
 vector<int> partition(vector<double> &arr, int L, int R) {
   int less = L - 1;

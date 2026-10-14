@@ -1,7 +1,6 @@
-#include <cstdint> // INT32_MIN：Solution::maxSubArray
-#include <algorithm> // max：第 21 行首次使用
-#include <iostream> // cout：第 49 行首次使用
-#include <vector> // vector：第 11 行首次使用
+#include <algorithm> // 使用处：第 20 行的 max(
+#include <iostream> // 使用处：第 48 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 /****************53最大子序和***********************************/
 //给定整数数组，寻找一个具有最大和的连续子数组，返回最大和

@@ -1,5 +1,5 @@
-#include <algorithm> // max：第 23 行首次使用
-#include <cstddef> // NULL：第 11 行首次使用
+#include <algorithm> // 使用处：第 23 行的 max(
+#include <cstddef> // 使用处：第 11 行的 NULL
 using namespace std;
 /**********************532二叉树直径*************************/
 //给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意

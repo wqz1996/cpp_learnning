@@ -5,12 +5,12 @@
  * @brief Solver for discrete-time linear quadratic problem.
  */
 
-#include "metrics/macros.h"
-#include <Eigen/Core>
-#include <Eigen/Dense>
-#include <limits>
-#include <logging/plus_logger.h>
-#include <type_traits>
+#include <algorithm> // 使用处：第 94 行的 max(
+#include <cmath> // 使用处：第 108 行的 fabs
+#include <Eigen/Dense> // 使用处：第 24 行的 Eigen
+#include <limits> // 使用处：第 94 行的 numeric_limits<
+#include <logging/plus_logger.h> // 使用处：第 18 行的 plusai::common::logging
+#include <type_traits> // 使用处：第 24 行的 is_base_of
 
 namespace drive {
 namespace control_v2 {

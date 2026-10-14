@@ -1,5 +1,5 @@
-#include <iostream> // cout, endl：第 24 行首次使用
-#include <cstddef> // NULL：第 8 行首次使用
+#include <iostream> // 使用处：第 24 行的 cout
+#include <cstddef> // 使用处：第 8 行的 NULL
 using namespace std;
 /************206反转链表*******************/
 struct ListNode {

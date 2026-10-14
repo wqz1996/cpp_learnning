@@ -1,5 +1,6 @@
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 14 行的 max(
+#include <iostream> // 使用处：第 75 行的 cout
+#include <vector> // 使用处：第 50 行的 vector
 // 射线法（Ray Casting
 // Algorithm）。该方法的基本思想是从待测点向任意方向发射一条射线，
 // 然后计算这条射线与多边形各边的交点数量。如果交点数量为奇数，点在多边形内部；如果为偶数，点在多边形外部。

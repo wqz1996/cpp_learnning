@@ -1,5 +1,5 @@
-#include <algorithm> // max：第 17 行首次使用
-#include <vector> // vector：第 9 行首次使用
+#include <algorithm> // 使用处：第 17 行的 max(
+#include <vector> // 使用处：第 9 行的 vector
 using namespace std;
 /******************42接雨水*****************************/
 // 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。

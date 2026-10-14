@@ -1,5 +1,5 @@
-#include <cmath>
-#include <iostream>
+#include <cmath> // 使用处：第 24 行的 abs
+#include <iostream> // 使用处：第 40 行的 cout
 // newtonMethod
 // x(n+1) = x(n) - f(x)/ f'(x)
 // 瀹氫箟鍑芥暟 f(x)

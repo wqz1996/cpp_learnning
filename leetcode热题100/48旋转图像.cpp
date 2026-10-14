@@ -1,4 +1,4 @@
-#include <vector> // vector：第 10 行首次使用
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //48. 旋转图像
 //给定一个 n × n 的二维矩阵表示一个图像。

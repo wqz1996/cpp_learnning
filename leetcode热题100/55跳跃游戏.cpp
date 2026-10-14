@@ -1,5 +1,5 @@
-#include <algorithm> // max：第 14 行首次使用
-#include <vector> // vector：第 10 行首次使用
+#include <algorithm> // 使用处：第 14 行的 max(
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //55. 跳跃游戏
 //给定一个非负整数数组，你最初位于数组的第一个位置。

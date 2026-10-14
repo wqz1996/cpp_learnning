@@ -1,6 +1,6 @@
-#include <algorithm> // sort：第 17 行首次使用
-#include <vector> // vector：第 9 行首次使用
-#include <cassert> // assert：第 35 行首次使用
+#include <algorithm> // 使用处：第 17 行的 sort(
+#include <vector> // 使用处：第 9 行的 vector
+#include <cassert> // 使用处：第 35 行的 assert(
 using namespace std;
 /*************15三数之和*****************************/
 //给定数组nums，找出三个元素和为0，输出不重复的所有结果

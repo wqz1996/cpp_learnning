@@ -1,7 +1,7 @@
-#include <cstdint> // INT32_MIN、INT32_MAX：Solution::findUnsortedSubarray
-#include <algorithm> // min, max：第 20 行首次使用
-#include <iostream> // cout：第 44 行首次使用
-#include <vector> // vector：第 11 行首次使用
+#include <cstdint> // 使用处：第 14 行的 INT32_MAX
+#include <algorithm> // 使用处：第 20 行的 min(
+#include <iostream> // 使用处：第 44 行的 cout
+#include <vector> // 使用处：第 11 行的 vector
 using namespace std;
 /****************281最短无序连续子数组***********************************/
 //给定整数数组，寻找连续子数组，对该子数组排序，则整个数组有序

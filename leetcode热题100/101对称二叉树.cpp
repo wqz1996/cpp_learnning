@@ -1,4 +1,4 @@
-#include <cstddef> // NULL：第 9 行首次使用
+#include <cstddef> // 使用处：第 9 行的 NULL
 using namespace std;
 /****************101对称二叉树***********************************/
 

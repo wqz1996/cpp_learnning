@@ -1,10 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <cstring> // 使用处：第 13 行的 strlen(
+#include <algorithm> // 使用处：第 7 行的 swap(
+#include <iostream> // 使用处：第 14 行的 cout
+#include <string> // 使用处：第 25 行的 string
 using namespace std;
 /********打印字符串全排列***有问题待解决****/
 void swap(char s[], int i, int j){

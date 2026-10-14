@@ -1,4 +1,4 @@
-#include <vector> // vector：第 11 行首次使用
+#include <vector> // 使用处：第 11 行的 vector
 using namespace std;
 //33. 搜索旋转排序数组
 //给定一个按照升序排列的整数数组 nums，和一个目标值 target。

@@ -1,5 +1,5 @@
-#include <algorithm> // max, min：第 17 行首次使用
-#include <vector> // vector：第 7 行首次使用
+#include <algorithm> // 使用处：第 17 行的 max(
+#include <vector> // 使用处：第 7 行的 vector
 using namespace std;
 class Solution {
 public:

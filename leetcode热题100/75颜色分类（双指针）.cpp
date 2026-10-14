@@ -1,6 +1,7 @@
-#include <iostream> // cout, endl：第 56 行首次使用
-#include <vector> // vector：第 10 行首次使用
-#include <cassert> // assert：第 13 行首次使用
+#include <algorithm> // 使用处：第 25 行的 swap(
+#include <iostream> // 使用处：第 57 行的 cout
+#include <vector> // 使用处：第 11 行的 vector
+#include <cassert> // 使用处：第 14 行的 assert(
 using namespace std;
 /************75颜色分类*********************/
 //给定有n个元素的数组，元素取值只有0，1，2三种可能

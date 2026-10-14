@@ -1,5 +1,5 @@
-#include <cmath>
-#include <iostream>
+#include <cmath> // 使用处：第 11 行的 abs
+#include <iostream> // 使用处：第 38 行的 cout
 using namespace std;
 double f(double y, double x) { return y * y - x; }
 double df(double y) { return 2.0 * y; }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream> // 使用处：第 14 行的 cin
 using namespace std;
 bool judge(int num) {
 	if (num < 2)

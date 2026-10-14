@@ -1,13 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
+#include <functional> // 使用处：第 20 行的 less<
+#include <algorithm> // 使用处：第 20 行的 make_heap(
+#include <iostream> // 使用处：第 16 行的 cin
+#include <vector> // 使用处：第 12 行的 vector
 using namespace std;
 /*******************循环输入，实时生成中位数*******************************************/
 int main()

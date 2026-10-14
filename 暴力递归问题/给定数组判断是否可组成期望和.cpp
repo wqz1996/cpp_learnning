@@ -1,10 +1,4 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <iostream> // 使用处：第 16 行的 cout
 using namespace std;
 #define length 4
 /****************给定数组，任意求和，能否得到指定sum***********************************/

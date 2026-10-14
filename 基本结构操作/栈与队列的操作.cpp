@@ -1,10 +1,7 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <functional> // 使用处：第 38 行的 greater<
+#include <vector> // 使用处：第 38 行的 vector
+#include <stack> // 使用处：第 18 行的 stack
+#include <queue> // 使用处：第 19 行的 queue
 using namespace std;
 struct node
 {

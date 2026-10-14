@@ -1,6 +1,6 @@
-#include <iostream> // cout、endl：main 输出两种解法
-#include <vector> // vector：第 12 行首次使用
-#include <cstdlib> // abs：第 38 行首次使用
+#include <cmath> // 使用处：第 38 行的 abs
+#include <iostream> // 使用处：第 56 行的 cout
+#include <vector> // 使用处：第 12 行的 vector
 using namespace std;
 /**********************448找出所有数组中消失的数字*************************/
 //给定一个范围在  1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，

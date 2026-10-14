@@ -1,10 +1,7 @@
-#include<algorithm>
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>
-#include<queue>
+#include <functional> // 使用处：第 23 行的 greater<
+#include <algorithm> // 使用处：第 23 行的 make_heap(
+#include <iostream> // 使用处：第 9 行的 cout
+#include <vector> // 使用处：第 6 行的 vector
 using namespace std;
 void printvec(vector<int> nums)
 {

@@ -1,8 +1,8 @@
-#include <cmath>
-#include <fstream>
-#include <iostream>
-#include <random>
-#include <vector>
+#include <cmath> // 使用处：第 13 行的 cos
+#include <fstream> // 使用处：第 84 行的 ofstream
+#include <iostream> // 使用处：第 86 行的 ios
+#include <random> // 使用处：第 64 行的 default_random_engine
+#include <vector> // 使用处：第 10 行的 vector
 
 using namespace std;
 

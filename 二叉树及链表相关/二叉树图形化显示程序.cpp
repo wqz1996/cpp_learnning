@@ -1,6 +1,7 @@
-#include<iostream>
-#include <string>
-#include<vector>
+#include <cstddef> // 使用处：第 16 行的 NULL
+#include <cstdlib> // 使用处：第 29 行的 calloc
+#include <stdio.h> // 使用处：第 70 行的 printf
+#include <cstring> // 使用处：第 60 行的 memset(
 
 
 using namespace std;

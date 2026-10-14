@@ -1,6 +1,6 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 9 行的 swap(
+#include <iostream> // 使用处：第 16 行的 cout
+#include <vector> // 使用处：第 5 行的 vector
 using namespace std;
 void bubblesort(vector<double> &arr) {
   for (int i = 0; i < arr.size(); i++) {

@@ -1,10 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <cstring> // 使用处：第 6 行的 strlen(
+#include <iostream> // 使用处：第 8 行的 cout
+#include <string> // 使用处：第 5 行的 string
 using namespace std;
 void printAllsub(char str[], int i, string res) {
 	if (i == strlen(str))

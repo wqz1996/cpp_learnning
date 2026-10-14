@@ -1,10 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<vector>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
+#include <cstdlib> // 使用处：第 26 行的 system
+#include <algorithm> // 使用处：第 23 行的 sort(
+#include <iostream> // 使用处：第 25 行的 cout
 using namespace std;
 
 struct student {

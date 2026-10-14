@@ -1,5 +1,5 @@
-#include <algorithm> // sort：第 26 行首次使用
-#include <vector> // vector：第 10 行首次使用
+#include <algorithm> // 使用处：第 26 行的 sort(
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //39. 组合总和
 //给定一个无重复元素的数组?candidates?和一个目标数?target?，

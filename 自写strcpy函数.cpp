@@ -1,5 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
+#include <cstddef> // 使用处：第 7 行的 NULL
+#include <string> // 使用处：第 28 行的 string
+#include <iostream> // 使用处：第 29 行的 cin
 using namespace std;
 char* my_strcpy(char* dst, const char* src, int cnt)
 {

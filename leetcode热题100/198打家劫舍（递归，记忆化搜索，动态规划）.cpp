@@ -1,5 +1,5 @@
-#include <algorithm> // max：第 18 行首次使用
-#include <vector> // vector：第 15 行首次使用
+#include <algorithm> // 使用处：第 18 行的 max(
+#include <vector> // 使用处：第 15 行的 vector
 using namespace std;
 /*************198打家劫舍******************/
 //沿街偷窃所有房屋，每个房间有一定量现金

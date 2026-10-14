@@ -1,6 +1,6 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 12 行的 swap(
+#include <iostream> // 使用处：第 18 行的 cout
+#include <vector> // 使用处：第 5 行的 vector
 using namespace std;
 void selectsort(vector<double> &arr) {
   int min;

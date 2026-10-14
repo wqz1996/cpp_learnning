@@ -1,19 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<sstream>//istringstream 可以将string以空格为分隔符分割
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <climits> // 使用处：第 51 行的 INT_MAX
+#include <algorithm> // 使用处：第 56 行的 min(
+#include <vector> // 使用处：第 9 行的 vector
 using namespace std;
 /************************零钱兑换2****************************/
 //给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个

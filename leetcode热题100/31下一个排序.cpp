@@ -1,4 +1,5 @@
-#include <vector> // vector：第 8 行首次使用
+#include <algorithm> // 使用处：第 9 行的 swap(
+#include <vector> // 使用处：第 9 行的 vector
 using namespace std;
 /*************31下一个排列*****************************/
 //实现获取下一个排列的函数，

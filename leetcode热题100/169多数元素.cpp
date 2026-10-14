@@ -1,8 +1,8 @@
-#include <algorithm> // sort：第 31 行首次使用
-#include <iostream> // cout, endl：第 75 行首次使用
-#include <vector> // vector：第 14 行首次使用
-#include <unordered_map> // unordered_map：第 15 行首次使用
-#include <cstdlib> // rand：第 42 行首次使用
+#include <algorithm> // 使用处：第 31 行的 sort(
+#include <iostream> // 使用处：第 75 行的 cout
+#include <vector> // 使用处：第 14 行的 vector
+#include <unordered_map> // 使用处：第 15 行的 unordered_map
+#include <cstdlib> // 使用处：第 42 行的 rand
 using namespace std;
 /**********************169多数元素*************************/
 //给定大小为n的数组，找到多数元素

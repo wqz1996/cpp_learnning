@@ -1,5 +1,4 @@
-#include <cmath>
-#include <iostream>
+#include <iostream> // 使用处：第 25 行的 cout
 
 double func(double x, double y) { return y * y - x; }
 

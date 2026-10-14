@@ -1,20 +1,9 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <cstddef> // 使用处：第 16 行的 NULL
+#include <algorithm> // 使用处：第 65 行的 swap(
+#include <iostream> // 使用处：第 147 行的 cout
+#include <string> // 使用处：第 158 行的 string
+#include <stack> // 使用处：第 23 行的 stack
+#include <vector> // 使用处：第 21 行的 vector
 using namespace std;
 //面试题32 - III. 从上到下打印二叉树 III
 // 题目：请实现一个函数按照之字形顺序打印二叉树，

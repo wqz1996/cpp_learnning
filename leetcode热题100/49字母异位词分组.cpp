@@ -1,7 +1,7 @@
-#include <algorithm> // sort：第 18 行首次使用
-#include <string> // string：第 11 行首次使用
-#include <vector> // vector：第 11 行首次使用
-#include <unordered_map> // unordered_map：第 12 行首次使用
+#include <algorithm> // 使用处：第 18 行的 sort(
+#include <string> // 使用处：第 11 行的 string
+#include <vector> // 使用处：第 11 行的 vector
+#include <unordered_map> // 使用处：第 12 行的 unordered_map
 using namespace std;
 //49. 字母异位词分组
 //给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，

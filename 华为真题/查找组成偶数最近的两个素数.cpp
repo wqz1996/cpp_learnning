@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>//不注重插入和删除效率
-#include<assert.h>
+#include <iostream> // 使用处：第 20 行的 cin
+#include <vector> // 使用处：第 23 行的 vector
+#include <assert.h> // 使用处：第 21 行的 assert(
 using namespace std;
 //输入n个整数，输出其中最小的k个。
 bool judge(int n) {

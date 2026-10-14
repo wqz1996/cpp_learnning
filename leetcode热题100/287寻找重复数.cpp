@@ -1,5 +1,5 @@
-#include <iostream> // cout、endl：main 输出两种解法
-#include <vector> // vector：第 11 行首次使用
+#include <iostream> // 使用处：第 73 行的 cout
+#include <vector> // 使用处：第 11 行的 vector
 using namespace std;
 /**********************287寻找重复数*************************/
 // 给定一个包含 n + 1 个整数的数组 nums ，其数字都在 [1, n] 范围内（包括 1 和 n），可知至少存在一个重复的整数。

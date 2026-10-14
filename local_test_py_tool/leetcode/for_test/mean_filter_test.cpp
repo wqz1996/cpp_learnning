@@ -1,6 +1,6 @@
-#include <iostream>
-#include <numeric> // 用于std::accumulate
-#include <vector>
+#include <iostream> // 使用处：第 12 行的 cerr
+#include <numeric> // 使用处：第 18 行的 accumulate(
+#include <vector> // 使用处：第 5 行的 vector
 
 std::vector<double> meanFilter(const std::vector<double> &input,
                                int windowSize) {

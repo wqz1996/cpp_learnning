@@ -1,21 +1,10 @@
-#include <algorithm> //包含堆操作
-#include <cmath>
-#include <ctime>
-#include <deque> //双端队列，兼顾随即存取，和两端数据的插入删除
-#include <iostream>
-#include <list> //类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include <queue>   //队列
-#include <sstream> //istringstream 可以将string以空格为分隔符分割
-#include <stack>   //栈
-#include <string>
-#include <vector> //不注重插入和删除效率
+#include <algorithm> // 使用处：第 25 行的 min(
+#include <iostream> // 使用处：第 34 行的 cout
+#include <vector> // 使用处：第 15 行的 vector
 
 // #include< unordered_map>
 // #include< unordered_set>
-#include <assert.h>
-#include <climits>
-#include <map>
-#include <set>
+#include <climits> // 使用处：第 15 行的 INT_MAX
 
 using namespace std;
 //鸡蛋掉落

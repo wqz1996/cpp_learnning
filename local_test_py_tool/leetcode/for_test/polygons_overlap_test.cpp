@@ -1,7 +1,6 @@
-#include <algorithm>
-#include <cmath>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 24 行的 max(
+#include <iostream> // 使用处：第 65 行的 cout
+#include <vector> // 使用处：第 18 行的 vector
 
 using namespace std;
 struct Point {

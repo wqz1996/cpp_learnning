@@ -1,7 +1,7 @@
-#include <iostream> // cout、endl：main 输出递归和迭代解法
-#include <string> // string：第 93 行首次使用
-#include <stack> // stack：第 44 行首次使用
-#include <cstddef> // NULL：第 15 行首次使用
+#include <iostream> // 使用处：第 100 行的 cout
+#include <string> // 使用处：第 93 行的 string
+#include <stack> // 使用处：第 44 行的 stack
+#include <cstddef> // 使用处：第 15 行的 NULL
 using namespace std;
 // 538. 把二叉搜索树转换为累加树
 // 给定一个二叉搜索树（Binary Search Tree），把它转换成为累加树

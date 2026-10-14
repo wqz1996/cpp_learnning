@@ -1,17 +1,10 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
+#include <cstddef> // 使用处：第 13 行的 NULL
+#include <cstdlib> // 使用处：第 48 行的 malloc
+#include <iostream> // 使用处：第 62 行的 cout
+#include <string> // 使用处：第 284 行的 string
+#include <cmath> // 使用处：第 203 行的 abs
+#include <unordered_map> // 使用处：第 284 行的 unordered_map
+#include <unordered_set> // 使用处：第 146 行的 unordered_set
 using namespace std;
 /******************判断链表是否是回文结构，例1->2->2->1*******************************************/
 struct Node {
@@ -289,7 +282,7 @@ int main()
 	//Node* h=reverse_node(head);
 	//Printlist(h);
 	unordered_map<string, int> hash;
-	hash_map<string, int> map;
+	unordered_map<string, int> map;
 	unordered_map<string, int>::iterator t;
 	hash.insert({ "zuo", 31 });
 	hash.insert({ "yao", 2 });

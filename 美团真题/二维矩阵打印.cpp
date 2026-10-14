@@ -1,3 +1,6 @@
+#include <vector> // 使用处：第 6 行的 vector
+using namespace std;
+
 class Printer {
 private:
 	vector<int> res;

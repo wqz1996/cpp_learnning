@@ -1,4 +1,4 @@
-#include <unordered_map> // unordered_map：第 24 行首次使用
+#include <unordered_map> // 使用处：第 24 行的 unordered_map
 using namespace std;
 /*************2两数相加*****************************/
 // 给你一个长度为 n 的链表，每个节点包含一个额外增加的随机指针 random ，该指针可以指向链表中的任何节点或空节点。

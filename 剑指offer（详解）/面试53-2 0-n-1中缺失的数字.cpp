@@ -1,20 +1,5 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <iostream> // 使用处：第 25 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 //面试题53 - II. 0～n-1中缺失的数字
 // 题目：一个长度为n-1的递增排序数组中的所有数字都是唯一的，

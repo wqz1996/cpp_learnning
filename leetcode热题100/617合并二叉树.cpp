@@ -1,7 +1,7 @@
-#include <iostream> // cout, endl：第 64 行首次使用
-#include <stack> // stack：第 40 行首次使用
-#include <cstddef> // NULL：第 14 行首次使用
-#include <utility> // pair, make_pair：第 40 行首次使用
+#include <iostream> // 使用处：第 64 行的 cout
+#include <stack> // 使用处：第 40 行的 stack
+#include <cstddef> // 使用处：第 14 行的 NULL
+#include <utility> // 使用处：第 40 行的 pair
 using namespace std;
 /**********************617合并二叉树*************************/
 // 合并的规则是如果两个节点重叠，那么将他们的值相加作为节点合并后的新值，

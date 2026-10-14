@@ -1,4 +1,4 @@
-#include <vector> // vector：第 11 行首次使用
+#include <vector> // 使用处：第 11 行的 vector
 using namespace std;
 /*************207课程表*****************************/
 // 你这个学期必须选修 numCourses 门课程，记为 0 到 numCourses - 1 。

@@ -1,6 +1,6 @@
-#include <algorithm> // sort, min：第 17 行首次使用
-#include <iostream> // cout, endl：第 81 行首次使用
-#include <vector> // vector：第 9 行首次使用
+#include <algorithm> // 使用处：第 17 行的 sort(
+#include <iostream> // 使用处：第 81 行的 cout
+#include <vector> // 使用处：第 9 行的 vector
 using namespace std;
 /*************4寻找两个正序数组的中位数*****************************/
 /**************时间复杂度O((M+N)****************************/

@@ -1,20 +1,6 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
-#include< unordered_map>
-#include< unordered_set>
-#include<hash_map>
-#include<hash_set>
-#include<assert.h>
-#include<set>
-#include<map>
+#include <cstddef> // 使用处：第 12 行的 NULL
+#include <algorithm> // 使用处：第 33 行的 max(
+#include <queue> // 使用处：第 42 行的 queue
 using namespace std;
 //面试题55 - I. 二叉树的深度
 // 题目：输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节

@@ -1,6 +1,6 @@
-#include< unordered_map>
-#include<hash_map>
-#include<iostream>
+#include <string> // 使用处：第 15 行的 string
+#include <unordered_map> // 使用处：第 15 行的 unordered_map
+#include <iostream> // 使用处：第 22 行的 cout
 using namespace std;
 int main()
 {	
@@ -13,7 +13,7 @@ int main()
 	//Node* h=reverse_node(head);
 	//Printlist(h);
 	unordered_map<string, int> hash;
-	hash_map<string, int> map;
+	unordered_map<string, int> map;
 	unordered_map<string, int>::iterator t;
 	hash.insert({ "zuo", 31 });
 	hash.insert({ "yao", 2 });

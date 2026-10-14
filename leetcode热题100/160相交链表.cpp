@@ -1,5 +1,5 @@
-#include <cstddef> // NULL：第 9 行首次使用
-#include <cstdlib> // abs：第 33 行首次使用
+#include <cmath> // 使用处：第 33 行的 abs
+#include <cstddef> // 使用处：第 9 行的 NULL
 using namespace std;
 /**********************160相交链表*************************/
 

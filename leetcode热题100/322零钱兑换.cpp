@@ -1,5 +1,5 @@
-#include <algorithm> // min：第 12 行首次使用
-#include <vector> // vector：第 6 行首次使用
+#include <algorithm> // 使用处：第 12 行的 min(
+#include <vector> // 使用处：第 6 行的 vector
 using namespace std;
 class Solution {
 public:

@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+#include <iostream> // 使用处：第 37 行的 cout
+#include <vector> // 使用处：第 18 行的 vector
 using namespace std;
 struct Point {
   double x, y;

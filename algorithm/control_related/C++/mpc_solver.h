@@ -5,13 +5,12 @@
  * @brief Convert mpc problem to qp based problem and solve.
  */
 
-#include "Eigen/Core"
-#include "Eigen/Dense"
-#include "Eigen/LU"
-#include "osqp/osqp.h"
-#include <gtest/gtest_prod.h>
-#include <memory>
-#include <vector>
+#include "Eigen/Dense" // 使用处：第 41 行的 Eigen
+#include "osqp/osqp.h" // 使用处：第 113 行的 OSQPData
+#include <cmath> // 使用处：第 159 行的 fabs
+#include <gtest/gtest_prod.h> // 使用处：第 104 行的 FRIEND_TEST(
+#include <memory> // 使用处：第 171 行的 unique_ptr
+#include <vector> // 使用处：第 50 行的 vector
 
 namespace drive {
 namespace control_v2 {

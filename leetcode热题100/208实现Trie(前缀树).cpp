@@ -1,5 +1,5 @@
-#include <string> // string：第 23 行首次使用
-#include <vector> // vector：第 79 行首次使用
+#include <string> // 使用处：第 23 行的 string
+#include <vector> // 使用处：第 79 行的 vector
 using namespace std;
 class Trie {
 private:

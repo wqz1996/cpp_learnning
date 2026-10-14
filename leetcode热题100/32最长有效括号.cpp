@@ -1,9 +1,9 @@
-#include <iostream> // cout、endl：main 输出三种解法
-#include <algorithm> // max：第 36 行首次使用
-#include <string> // string：第 16 行首次使用
-#include <stdexcept> // invalid_argument：输入字符非法时抛出异常
-#include <stack> // stack：第 88 行首次使用
-#include <vector> // vector：第 128 行首次使用
+#include <iostream> // 使用处：第 151 行的 cout
+#include <algorithm> // 使用处：第 36 行的 max(
+#include <string> // 使用处：第 16 行的 string
+#include <stdexcept> // 使用处：第 32 行的 invalid_argument
+#include <stack> // 使用处：第 88 行的 stack
+#include <vector> // 使用处：第 128 行的 vector
 using namespace std;
 /************32最长有效括号********************/
 // 给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。

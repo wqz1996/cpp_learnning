@@ -1,5 +1,5 @@
-#include <iostream> // cout, endl：第 60 行首次使用
-#include <vector> // vector：第 8 行首次使用
+#include <iostream> // 使用处：第 60 行的 cout
+#include <vector> // 使用处：第 8 行的 vector
 using namespace std;
 /************283 Move Zeros*********************/
 //给定数组，将所有0移动到数组末尾，其他元素不变

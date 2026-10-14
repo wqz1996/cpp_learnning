@@ -1,5 +1,5 @@
-#include <iostream> // cout：第 43 行首次使用
-#include <vector> // vector：第 12 行首次使用
+#include <iostream> // 使用处：第 43 行的 cout
+#include <vector> // 使用处：第 12 行的 vector
 using namespace std;
 //33. 搜索旋转排序数组
 //假设按照升序排序的数组在预先未知的某个点上进行了旋转。

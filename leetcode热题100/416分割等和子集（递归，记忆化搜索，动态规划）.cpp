@@ -1,6 +1,6 @@
-#include <iostream> // cout, endl：第 108 行首次使用
-#include <vector> // vector：第 10 行首次使用
-#include <cassert> // assert：第 35 行首次使用
+#include <iostream> // 使用处：第 108 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
+#include <cassert> // 使用处：第 35 行的 assert(
 using namespace std;
 /*************416分割等和子集*****************************/
 //给定只包含正整数的非空数组，将该数组分割成两个子集，

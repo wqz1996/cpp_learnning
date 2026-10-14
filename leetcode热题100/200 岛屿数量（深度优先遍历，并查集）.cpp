@@ -1,5 +1,5 @@
-#include <iostream> // cout, endl：第 84 行首次使用
-#include <vector> // vector：第 10 行首次使用
+#include <iostream> // 使用处：第 84 行的 cout
+#include <vector> // 使用处：第 10 行的 vector
 using namespace std;
 /*************深度优先遍历*****************/
 //岛的数量问题(floodfill算法)

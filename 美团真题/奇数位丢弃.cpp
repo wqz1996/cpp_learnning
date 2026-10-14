@@ -1,5 +1,5 @@
-#include<vector>
-#include<iostream>
+#include <vector> // 使用处：第 8 行的 vector
+#include <iostream> // 使用处：第 6 行的 cin
 using namespace std;
 int main() {
 	int n;

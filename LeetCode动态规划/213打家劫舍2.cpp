@@ -1,3 +1,7 @@
+#include <algorithm> // 使用处：第 10 行的 max(
+#include <vector> // 使用处：第 7 行的 vector
+using namespace std;
+
 class Solution {
 private:
 	int findrob(vector<int> nums, int start, int end) {

@@ -1,13 +1,4 @@
-#include<algorithm>//包含堆操作
-#include<iostream>
-#include<string>
-#include<cmath>
-#include<stack>//栈
-#include<queue>//队列
-#include<vector>//不注重插入和删除效率
-#include<list>//类似双向链表，随即存取效率差，不支持[]符号，但是插入和删除效率高
-#include<deque>//双端队列，兼顾随即存取，和两端数据的插入删除
-#include<ctime>
+#include <iostream> // 使用处：第 39 行的 cout
 using namespace std;
 /****************小和问题***********************************///一个数组中当每一个数左边比当前数小的数累加起来叫做数组的小和
 //在merge过程中求得小和，将

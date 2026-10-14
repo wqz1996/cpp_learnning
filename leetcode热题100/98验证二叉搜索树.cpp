@@ -1,5 +1,5 @@
-#include <climits> // LONG_MIN：第 39 行首次使用
-#include <cstddef> // NULL：第 15 行首次使用
+#include <climits> // 使用处：第 33 行的 LLONG_MIN
+#include <cstddef> // 使用处：第 15 行的 NULL
 using namespace std;
 // 98. 验证二叉搜索树
 // 给定一个二叉树，判断其是否是一个有效的二叉搜索树。

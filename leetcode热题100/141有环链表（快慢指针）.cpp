@@ -1,5 +1,5 @@
-#include <unordered_set> // unordered_set：第 35 行首次使用
-#include <cstddef> // NULL：第 18 行首次使用
+#include <unordered_set> // 使用处：第 35 行的 unordered_set
+#include <cstddef> // 使用处：第 18 行的 NULL
 using namespace std;
 /*************141环形链表*****************************/
 //判断有环无环

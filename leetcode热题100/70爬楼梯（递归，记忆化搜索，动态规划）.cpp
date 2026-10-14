@@ -1,5 +1,5 @@
-#include <iostream> // cout：第 71 行首次使用
-#include <vector> // vector：第 58 行首次使用
+#include <iostream> // 使用处：第 71 行的 cout
+#include <vector> // 使用处：第 58 行的 vector
 using namespace std;
 /*************70 爬楼梯******************/
 //共n阶楼梯，一次可以上一阶或者两阶，共有多少种不同的爬楼梯方法

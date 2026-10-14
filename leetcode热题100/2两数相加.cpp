@@ -1,4 +1,4 @@
-#include <cstddef> // NULL：第 8 行首次使用
+#include <cstddef> // 使用处：第 8 行的 NULL
 using namespace std;
 /*************2两数相加*****************************/
 //链表处理

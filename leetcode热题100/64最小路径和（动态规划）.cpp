@@ -1,7 +1,7 @@
-#include <algorithm> // min：第 18 行首次使用
-#include <climits>   // INT_MAX：第 15 行首次使用
-#include <iostream>  // cout, endl：第 117 行首次使用
-#include <vector>    // vector：第 13 行首次使用
+#include <algorithm> // 使用处：第 18 行的 min(
+#include <climits> // 使用处：第 15 行的 INT_MAX
+#include <iostream> // 使用处：第 117 行的 cout
+#include <vector> // 使用处：第 13 行的 vector
 
 using namespace std;
 // 64. 最小路径和

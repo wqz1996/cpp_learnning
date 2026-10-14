@@ -1,5 +1,5 @@
-#include <string> // string：第 10 行首次使用
-#include <vector> // vector：第 16 行首次使用
+#include <string> // 使用处：第 10 行的 string
+#include <vector> // 使用处：第 16 行的 vector
 using namespace std;
 /*************5最长回文子串*****************************/
 //给定子串，返回最长的回文子串

@@ -1,6 +1,6 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 25 行的 min(
+#include <iostream> // 使用处：第 71 行的 cout
+#include <vector> // 使用处：第 20 行的 vector
 
 //分离轴定理
 

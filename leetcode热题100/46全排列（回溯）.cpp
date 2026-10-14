@@ -1,5 +1,5 @@
-#include <iostream> // cout, endl：第 43 行首次使用
-#include <vector> // vector：第 7 行首次使用
+#include <iostream> // 使用处：第 43 行的 cout
+#include <vector> // 使用处：第 7 行的 vector
 using namespace std;
 /*************排列组合问题*****************/
 class Solution {

@@ -1,5 +1,5 @@
-#include <vector> // vector：第 15 行首次使用
-#include <cstddef> // NULL：第 10 行首次使用
+#include <vector> // 使用处：第 15 行的 vector
+#include <cstddef> // 使用处：第 10 行的 NULL
 using namespace std;
 // 105 从前序与中序遍历序列构造二叉树
 struct TreeNode

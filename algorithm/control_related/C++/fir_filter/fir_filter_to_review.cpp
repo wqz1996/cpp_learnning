@@ -1,9 +1,6 @@
-#include <cmath>
-#include <deque>
-#include <fstream>
-#include <iostream>
-#include <random>
-#include <vector>
+#include <cmath> // 使用处：第 21 行的 cos
+#include <deque> // 使用处：第 11 行的 deque
+#include <vector> // 使用处：第 9 行的 vector
 
 using namespace std;
 

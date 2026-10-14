@@ -1,6 +1,5 @@
-#include <Eigen/Dense> // 需要Eigen库
-#include <iostream>
-#include <vector>
+#include <Eigen/Dense> // 使用处：第 5 行的 Eigen
+#include <iostream> // 使用处：第 24 行的 cout
 
 using namespace std;
 using namespace Eigen;

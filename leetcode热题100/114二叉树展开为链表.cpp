@@ -1,4 +1,4 @@
-#include <cstddef> // NULL：第 16 行首次使用
+#include <cstddef> // 使用处：第 16 行的 NULL
 using namespace std;
 
 struct TreeNode {

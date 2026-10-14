@@ -1,5 +1,5 @@
-#include <cmath>
-#include <iostream>
+#include <cmath> // 使用处：第 4 行的 log
+#include <iostream> // 使用处：第 23 行的 cout
 
 double func(double x) { return log(x) + pow(x, 3); }
 

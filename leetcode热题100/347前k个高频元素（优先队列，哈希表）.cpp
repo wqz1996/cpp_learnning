@@ -1,9 +1,9 @@
-#include <queue> // priority_queue：第 19 行首次使用
-#include <vector> // vector：第 13 行首次使用
-#include <unordered_map> // unordered_map：第 15 行首次使用
-#include <cassert> // assert：第 14 行首次使用
-#include <utility> // pair, make_pair：第 19 行首次使用
-#include <functional> // greater：第 19 行首次使用
+#include <queue> // 使用处：第 19 行的 priority_queue
+#include <vector> // 使用处：第 13 行的 vector
+#include <unordered_map> // 使用处：第 15 行的 unordered_map
+#include <cassert> // 使用处：第 14 行的 assert(
+#include <utility> // 使用处：第 19 行的 pair
+#include <functional> // 使用处：第 19 行的 greater<
 using namespace std;
 /************347前k个高频元素*******************/
 //给定非空数组，返回出现频率前k高的元素

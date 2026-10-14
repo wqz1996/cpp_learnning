@@ -1,6 +1,6 @@
-#include <cmath>
-#include <iostream>
-#include <vector>
+#include <cmath> // 使用处：第 38 行的 abs
+#include <iostream> // 使用处：第 34 行的 cout
+#include <vector> // 使用处：第 6 行的 vector
 using namespace std;
 // 函数：计算周期
 double findPeriod(const std::vector<double> &signal) {

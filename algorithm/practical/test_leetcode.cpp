@@ -1,6 +1,6 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include <algorithm> // 使用处：第 28 行的 min(
+#include <iostream> // 使用处：第 74 行的 cout
+#include <vector> // 使用处：第 23 行的 vector
 
 struct Point {
   double x, y;
